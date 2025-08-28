@@ -8,7 +8,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/s
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
-import { Home, UserPlus, Bot, Menu, Sparkles, Briefcase, HandCoins, Clock8, Ship, Hand, Clock   } from "lucide-react";
+import { Home, UserPlus, Bot, Menu, Sparkles, Briefcase, HandCoins, Ship, Clock, Puzzle   } from "lucide-react";
 
 interface NavItem {
   href: string;
@@ -38,9 +38,10 @@ const NavContent = ({ isMobile = false }: { isMobile?: boolean }) => {
   const navItems: NavItem[] = [
     { href: "/", label: "Hiring Portal", icon: <Briefcase className="h-5 w-5" /> },
     { href: "/onboarding", label: "Onboarding Portal", icon: <Ship className="h-5 w-5" /> },
+    { href: "/extensions", label: "Extension Library", icon: <Puzzle className="h-5 w-5" /> },
     { href: "/payroll", label: "Payroll", icon: <HandCoins className="h-5 w-5" /> },
     { href: "/timeoff", label: "Time Off", icon: <Clock className="h-5 w-5" /> },
-    { href: "/chatbot", label: "Chatbot", icon: <Bot className="h-5 w-5" /> },
+    { href: "/chatbot", label: "Chatbot", icon: <Bot className="h-5 w-5" /> }
 
 
   ];
