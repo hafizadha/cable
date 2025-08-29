@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "HR Portal Sidebar Test",
+  "version": "1.0",
+  "description": "Tests the HR Portal UI in the Chrome Side Panel.",
+  "permissions": ["sidePanel"],
+  "host_permissions": [
+    "http://localhost:3000/"
+  ],
+  "action": {
+    "default_title": "Open HR Portal",
+    "default_icon": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "icons": {
+    "128": "icon128.png"
+  }
+}
